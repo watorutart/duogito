@@ -79,10 +79,15 @@ DuogitoはGitHubのcontribution streakを追跡し、日々のコーディング
 
 ## デプロイメント戦略
 
+### パッケージマネージャー
+- **エコシステム**: pnpm（高速、効率的な依存関係管理）
+- **理由**: ディスク容量効率、高速インストール、厳密な依存関係管理
+
 ### CLI版
-- **配布**: npm package
-- **インストール**: `npm install -g duogito`
+- **配布**: npm package（pnpm経由でインストール可能）
+- **インストール**: `pnpm add -g duogito`
 - **実行**: `duogito` コマンド
+- **開発**: `pnpm install`, `pnpm dev`, `pnpm build`
 
 ### Web版（将来）
 - **ホスティング**: Vercel/Netlify（静的サイト）
