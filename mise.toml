@@ -1,2 +1,4 @@
 [tools]
+node = "20"
+pnpm = "8"
 uv = "latest"
